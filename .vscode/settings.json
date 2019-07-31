@@ -3,5 +3,5 @@
 	"python.linting.pylintEnabled": false,
 	"python.linting.pydocstyleEnabled": true,
 	"python.linting.enabled": true,
-	"python.pythonPath": "/home/carlosal1015/.virtualenvs/Python-Programming-50eigt98/bin/python"
+	"python.pythonPath": "/opt/conda/bin/python"
 }
