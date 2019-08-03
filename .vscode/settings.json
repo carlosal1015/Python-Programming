@@ -1,7 +1,0 @@
-{
-	"restructuredtext.confPath": "",
-	"python.linting.pylintEnabled": false,
-	"python.linting.pydocstyleEnabled": true,
-	"python.linting.enabled": true,
-	"python.pythonPath": ".venv/bin/python"
-}
