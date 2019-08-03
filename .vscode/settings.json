@@ -3,5 +3,5 @@
 	"python.linting.pylintEnabled": false,
 	"python.linting.pydocstyleEnabled": true,
 	"python.linting.enabled": true,
-	"python.pythonPath": "/opt/conda/bin/python"
+	"python.pythonPath": ".venv/bin/python"
 }

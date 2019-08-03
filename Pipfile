@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pychalk = "*"
+pydocstyle = "*"
 
 [packages]
 jupyterlab = "*"
