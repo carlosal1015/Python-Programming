@@ -11,6 +11,8 @@ pydocstyle = "*"
 jupyterlab = "*"
 Django = ">=2.2.3"
 money = "*"
+docutils = "*"
+doc8 = "*"
 
 [requires]
 python_version = "3.7"

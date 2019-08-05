@@ -1,31 +1,33 @@
-this is
-still
-single paragraph
+===============================
+Programación en |Python|
+===============================
 
+.. |Python| image:: images/python.png
+   :align: top
+   :width: 200
 
-now we are in another paragraph
-
-.. I'm comment
-	I will be ignore :(
-
-*I'm italic*
-**I'm bold**
-``Ì'm code sample``
-
-=====
-Title
-=====
+Descarga Python `aquí <http://www.python.org/>`_.
 
 ############
-Part
+Cronograma
 ############
 
-*********
-Chapter
-*********
+====== ============ ===================================
+Clase	Fecha		Temas
+====== ============ ===================================
+`1`_	24/07/2019	`Introducción, historia e instalación`_, `identificadores y asignación`_.
+`2`_	31/07/2019	`Estructuras de control`_, `importación de módulos`_.
+`3`_	02/08/2019	`Tabla ASCII`_, `cadenas`_ y `funciones`_.
+`4`_	05/08/2019	`Listas`_, `diccionarios`_.
+`5`_	07/08/2019	Orientado a objetos.
+`6`_	09/08/2019	Archivos.
+====== ============ ===================================
 
-Section
+Tareas
 =======
+
+Las tareas
+
 
 Subsection
 ----------
@@ -59,36 +61,24 @@ Grid table:
 +========+===========+================+
 | one    | 1         | I              |
 +--------+-----------+----------------+
-| five   | 5         | V              |
-+--------+-----------+----------------+
 
-Simple table:
-
-===== ======= =============
-Word  Decimal Rome notation
-===== ======= =============
-one   1       I
-five  5       V
-===== ======= =============
-
-===============================
-How to work with genes database
-===============================
-
-Creating genes database
-=======================
-
-In order to create genes database run create_genes_db.py script
-with -i (input directory) and -o (output filename) flags.
-Data for future database is included with the script.
+*********
+Temario
+*********
+.. _Introducción, historia e instalación: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/First_class/slides/S11_Introduccion%20a%20la%20Programaci%C3%B3n%20en%20Python%20CTIC-UNI.pdf
+.. _identificadores y asignación: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/First_class/slides/S12_Elementos%20del%20Lenguaje%20de%20Programacion%20Python%20CTIC-UNI.pdf
+.. _Estructuras de control: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/Second_class/slides/EstructurasdeControlPythonCTIC-UNI.pdf
+.. _importación de módulos: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/Second_class/slides/Modulos%20Random%20Math%20en%20Python.pdf
+.. _Tabla ASCII: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/Third_class/slides/tabla_caracteres-ASCII.pdf
+.. _cadenas: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/Third_class/slides/Sesion%2003a%20Strings%20en%20Python%20CTIC-UNI.pdf
+.. _funciones: https://github.com/carlosal1015/Python-Programming/blob/master/CTIC/Third_class/slides/Sesion%2003b%20Funciones%20en%20Python%20CTIC-UNI.pdf
+.. _Listas: 
+.. _diccionarios: 
 
 
-External hyperlinks, like Python_.
-
-.. _Python: http://www.python.org/
-
-External hyperlinks, like `Python <http://www.python.org/>`_.
-
-Wikipedia es `mi sitio favorito`_.
-
-.. _mi sitio favorito: http://www.wikipedia.org/
+.. _1: https://github.com/carlosal1015/Python-Programming/tree/master/CTIC/First_class
+.. _2: https://github.com/carlosal1015/Python-Programming/tree/master/CTIC/Second_class
+.. _3: https://github.com/carlosal1015/Python-Programming/tree/master/CTIC/Third_class
+.. _4: https://github.com/carlosal1015/Python-Programming/tree/master/CTIC/Fourth_class
+.. _5: https://github.com/carlosal1015/Python-Programming/tree/master/CTIC/Fifth_class
+.. _6: https://github.com/carlosal1015/Python-Programming/tree/master/CTIC/Sixth_class
