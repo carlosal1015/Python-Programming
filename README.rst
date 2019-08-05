@@ -1,6 +1,5 @@
-===============================
 Programación en |Python|
-===============================
+########################
 
 .. |Python| image:: images/python.png
    :align: top
@@ -12,9 +11,9 @@ Descarga Python `aquí <http://www.python.org/>`_  o instálalo vía
 
     # pacman -Sy python
 
-############
+============
 Cronograma
-############
+============
 
 ====== ============ ===================================
 Clase	Fecha		Temas
@@ -49,6 +48,51 @@ Las tareas
 
 	index = hora_salida.index(hora_cercana)
 	print(f"Tiempo de partida más cercano es {hora_cercana}, llegada a las {hora_llegada[index]}")
+
+
+.. code:: python
+
+	from money import Money
+
+	factory = Money(amount = eval(input("Ingrese el saldo de la empresa:")), currency = 'USD')
+	computo = Money(5000, 'USD')
+	mobiliario = Money(2000, 'USD')
+
+	if factory.amount < 0:
+			loan = Money(10000, 'USD') - factory
+			factory = Money(10000, 'USD')
+	elif factory.amount <= 20000:
+			loan = Money(20000, 'USD') - factory
+			factory = Money(20000, 'USD')
+
+	resto = factory - (computo + mobiliario)
+	insumos = incentivos = Money(amount = resto.amount/2, currency = 'USD')
+
+	print(f"Se destinará {insumos.amount} {insumos.currency} para la compra de insumos.")
+	print(f"Se destinará {incentivos.amount} {incentivos.currency} para los incentivos del personal.")
+	print(f"Pedirá un préstamo de {loan.amount} {loan.currency}.")
+
+.. code:: python
+
+	from math import sqrt, sin, cos, pi
+	from random import random as rd
+
+	RADIUS = 10
+	x, y = [0, 0, 0, 0, 0], [0, 0, 0, 0, 0] # [0]*4 no funciona!
+	# x, y son objetos diferentes para que genere valores aleatorios distintos!
+
+	for i in range(5):
+		theta = 2*pi*rd() # \theta \in [0, 2\pi).
+		radius = RADIUS*rd() # r \in \in [0, 10).
+		x[i], y[i] = radius*cos(theta), radius*sin(theta)
+		print(f"\t{x[i]} \t {y[i]}")
+
+	distances = [sqrt((x[0] - x[i+1])**2 + (y[0] - y[i+1])**2) for i in range(4)]
+	print(distances)
+
+	index = distances.index(min(distances))
+	print(index)
+	print(f"El punto N°{index+1} es el más cercano al primer punto.")
 
 Subsection
 ----------
