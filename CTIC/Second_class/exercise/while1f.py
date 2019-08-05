@@ -1,4 +1,5 @@
-# Parte f
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 acum = 0
 i = 2
 while i<=20:

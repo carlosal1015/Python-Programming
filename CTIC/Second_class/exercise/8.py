@@ -1,6 +1,5 @@
-
-# Ejercicio 2
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 N = int(input("Ingrese el lado del cuadrado: "))
 
 relleno = input("Ingrese el caracter de relleno: ")

@@ -1,5 +1,5 @@
-# Pagina 31
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 monto = eval(input("Ingrese el monto de inversion: "))
 years = int(input("Ingrese el numero de anos: "))
 tasa = eval(input("Ingrese la tasa: "))

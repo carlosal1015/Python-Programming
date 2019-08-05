@@ -29,7 +29,7 @@ while True:
             raise ValueError
         break
     except ValueError:
-        print("No es posible calcular raíz cuadrada de números negativos! en R")
+        print("No es posible calcular raíz cuadrada de números negativos! en \mathbb{R}.")
 
 print(f"Valor estimado del programa: {root_square_numeric(number)}.")
 print(f"Valor estimado de Python: {sqrt(number)}.")

@@ -1,5 +1,5 @@
-# Ejercicio 1
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 num1 = int(input("Ingrese el primer numero: "))
 num2 = int(input("Ingrese el segundo numero: "))
 

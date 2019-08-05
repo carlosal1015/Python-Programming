@@ -1,4 +1,5 @@
-# uso de if
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 x = 2
 
 if x > 10:

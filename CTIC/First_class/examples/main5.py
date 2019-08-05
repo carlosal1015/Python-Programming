@@ -1,7 +1,9 @@
-# Pregunta 20
-
-# Se tiene el algoritmo de la division
-# D = d*c + R
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Se tiene el algoritmo de la division
+D = d*c + R
+"""
 
 # a)
 print("Parte a)")

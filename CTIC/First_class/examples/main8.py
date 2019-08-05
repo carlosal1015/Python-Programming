@@ -1,4 +1,5 @@
-# Funciones de conversion
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 nombre = input("Ingrese su nombre: ")
 
 edad = input("Ingrese su edad: ")

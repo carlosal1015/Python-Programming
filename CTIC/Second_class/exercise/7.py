@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 acum = 0
 
 for i in range(99, 0-1, -11):

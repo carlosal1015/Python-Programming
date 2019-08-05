@@ -1,5 +1,5 @@
-# Ejercicio 2
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from math import pi as pi
 
 print("""
