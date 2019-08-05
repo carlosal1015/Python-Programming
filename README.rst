@@ -34,7 +34,7 @@ Las tareas
 
 .. code:: python
 
-  from datetime import datetime as dt
+	from datetime import datetime as dt
 
 	hora_salida = ['08:00' ,'09:43', '11:19', '12:47', '14:00', '15:45', '19:00', '21:45']
 	hora_llegada = ['10:16', '11:52', '13:31', '15:19', '16:08', '17:55', '21:20', '23:58']
