@@ -1,22 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This script is used to create the models for the project app.
-
-Author: Oromion
-Date: 05/08/2019
+Program that convert degree Celsius to Fahrenheit.
 """
-string = input("Ingrese una cadena: ")
-i = 0
+from random import random as rd
 
-while (i < len(string)):
-	if string[i] == 'a':
-		print(f"'a' encontrado en la posición {i+1}.")
-	i +=1
+celsius2fahrenheit = lambda degrees: (9/5)*degrees + 32
+temperatures_random = [0*rd() + (1-rd())*100 for i in range(100)]
+#temperatures_ordered = [i for i in range(0, 100)]
 
-print("Se imprime la cadena: ", end="")
-for simb in string:
-	print(f"{simb}", end="")
-
-for simb in string:
-	print(f"{simb}")
+print(f"{'Número (N)'.rjust(10)} {'Grados Celsius (°C)'.ljust(15)} {'Grados Fahrenheit (°F)'.rjust(15)}")
+for i in range(len(temperatures_random)):
+	print(f"{i + 1:>10} {temperatures_random[i]:<5.2f} {celsius2fahrenheit(temperatures_random[i]):>36.2f}")
+	#print(f"{i + 1:>10} {temperatures_ordered[i]:<5.2f} {celsius2fahrenheit(temperatures_ordered[i]):>36.2f}")

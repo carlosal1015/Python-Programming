@@ -31,8 +31,5 @@ print(texto[-6])
 for i in range(0, len(texto)):
     print(texto[i])
 
-#TODO: Enviar correo wguadalupq@uni.pe
-
 for simb in texto:
     print(simb)
-
