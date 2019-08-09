@@ -1,3 +1,159 @@
+.. class:: no-web
+
+    .. image:: https://raw.githubusercontent.com/jakubroztocil/httpie/master/httpie.gif
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
+    .. image:: https://raw.githubusercontent.com/jakubroztocil/httpie/master/httpie.png
+        :alt: HTTPie compared to cURL
+        :width: 100%
+        :align: center
+
+.. contents::
+
+.. section-numbering::
+
+Main features
+=============
+
+* Expressive and intuitive syntax
+* Formatted and colorized terminal output
+* Built-in JSON support
+* Forms and file uploads
+* HTTPS, proxies, and authentication
+* Arbitrary request data
+* Custom headers
+* Persistent sessions
+* Wget-like downloads
+* Python 2.7 and 3.x support
+* Linux, macOS and Windows support
+* Plugins
+* Documentation
+* Test coverage
+
+
+Installation
+============
+
+
+macOS
+-----
+
+
+On macOS, HTTPie can be installed via `Homebrew <http://brew.sh/>`_
+(recommended):
+
+.. code-block:: bash
+
+    $ brew install httpie
+
+
+A MacPorts *port* is also available:
+
+.. code-block:: bash
+
+    $ port install httpie
+
+Linux
+-----
+
+Most Linux distributions provide a package that can be installed using the
+system package manager, for example:
+
+.. code-block:: bash
+
+    # Debian, Ubuntu, etc.
+    $ apt-get install httpie
+
+.. code-block:: bash
+
+    # Fedora
+    $ dnf install httpie
+
+.. code-block:: bash
+
+    # CentOS, RHEL, ...
+    $ yum install httpie
+
+.. code-block:: bash
+
+    # Arch Linux
+    $ pacman -S httpie
+
+
+Windows, etc.
+-------------
+
+A universal installation method (that works on Windows, Mac OS X, Linux, …,
+and always provides the latest version) is to use `pip`_:
+
+
+.. code-block:: bash
+
+    # Make sure we have an up-to-date version of pip and setuptools:
+    $ pip install --upgrade pip setuptools
+
+    $ pip install --upgrade httpie
+
+
+(If ``pip`` installation fails for some reason, you can try
+``easy_install httpie`` as a fallback.)
+
+
+Python version
+--------------
+
+Although Python 2.7 is supported as well, it is strongly recommended to
+install HTTPie against the latest Python 3.x whenever possible. That will
+ensure that some of the newer HTTP features, such as
+`SNI (Server Name Indication)`_, work out of the box.
+Python 3 is the default for Homebrew installations starting with version 0.9.4.
+To see which version HTTPie uses, run ``http --debug``.
+
+
+Unstable version
+----------------
+
+You can also install the latest unreleased development version directly from
+the ``master`` branch on GitHub.  It is a work-in-progress of a future stable
+release so the experience might be not as smooth.
+
+
+.. class:: no-pdf
+
+|unix_build|
+
+
+On macOS you can install it with Homebrew:
+
+.. code-block:: bash
+
+    $ brew install httpie --HEAD
+
+
+Otherwise with ``pip``:
+
+.. code-block:: bash
+
+    $ pip install --upgrade https://github.com/jakubroztocil/httpie/archive/master.tar.gz
+
+
+Verify that now we have the
+`current development version identifier <https://github.com/jakubroztocil/httpie/blob/0af6ae1be444588bbc4747124e073423151178a0/httpie/__init__.py#L5>`_
+with the ``-dev`` suffix, for example:
+
+.. code-block:: bash
+
+    $ http --version
+    1.0.0-dev
+
+
+Usage
+=====
+
+
 Programación en |Python|
 ########################
 
