@@ -2,38 +2,28 @@
 Tarea 3
 =======
 
-.. code:: python
+1. Defina una función que reciba un valor en grados Centígrados y devuelva su valor correspondiente en grados Fahrenheit,
 
-	string = input("Ingrese una cadena: ")
-	i = 0
+.. math::
 
-	while (i < len(string)):
-		if string[i] == 'a':
-			print(f"'a' encontrado en la posición {i+1}.")
-		i +=1
+	F = \frac{9}{5}C + 32.
 
-	print("Se imprime la cadena: ", end="")
-	for simb in string:
-		print(f"{simb}", end="")
-
-	for simb in string:
-		print(f"{simb}")
+Use esta función para escribir un programa que imprima el equivalente de las temperaturas de 0C-100C en forma tabular.
 
 .. code:: python
 
 	from random import random as rd
 
 	celsius2fahrenheit = lambda degrees: (9/5)*degrees + 32
+	temperatures_random = [0*rd() + (1-rd())*100 for i in range(100)]
 
-	temperatures = [-273.15*rd() + (1-rd())*99.9839 for i in range(10)]
-	#°C
-	temps = [("Berlin", 29)]
-	c_to_f = lambda data: (data[0], (9/5)*data[1] + 32)
+	print(f"{'Número (N)'.rjust(10)} {'Grados Celsius (°C)'.ljust(15)} {'Grados Fahrenheit (°F)'.rjust(15)}")
+	for i in range(len(temperatures_random)):
+		print(f"{i + 1:>10} {temperatures_random[i]:<5.2f} {celsius2fahrenheit(temperatures_random[i]):>36.2f}")
 
-	list(map(c_to_f, temps))
+2. Implemente una función que determine si un número ingresado del teclado es primo. Escriba un programa para probar la función.
 
-	full_name = lambda fn, ln: fn.strip().title() + " " + ln.strip().title()
-	full_name("   leonhard" , "EULER")
+a) la función debe devolver algún valor que indiqe que el número es o no es primo.
 
 .. code:: python
 
@@ -54,4 +44,46 @@ Tarea 3
 	else:
 		print(f"{number} no es primo.")
 
+b) la función no devuelve ningún valor, indica si es o no es primo directamente en pantalla.
+
 .. code:: python
+
+	def isPrime(number):
+		if number == 1:
+			print(f"{number} no es primo.")
+		i = 2
+		while i <= number:
+			if number % i == 0:
+				print(f"{number} no es primo.")
+			else:
+				print(f"{number} es primo.")
+			break
+			i += 1
+
+	def main():
+		integer = int(input("Ingreso un entero no negativo: "))
+		print(isPrime(integer))
+
+
+	if __name__ == "__main__":
+		main()
+
+
+3. Ingresar un string del teclado y determinar si la letra `a` se encuentra en él y la posición donde se encuentra.
+Imprimir también los elementos del string.
+
+.. code:: python
+
+	string = input("Ingrese una cadena: ")
+	i = 0
+
+	while (i < len(string)):
+		if string[i] == 'a':
+			print(f"'a' encontrado en la posición {i+1}.")
+		i +=1
+
+	print("Se imprime la cadena: ", end="")
+
+	# Horizontal
+	for simb in string:
+		print(f"{simb}", end="")

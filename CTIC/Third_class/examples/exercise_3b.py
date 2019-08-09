@@ -1,5 +1,4 @@
 # Ejercicio 3a
-
 cadena = input("Ingrese una cadena: ")
 longitud = len(cadena)
 
