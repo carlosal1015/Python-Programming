@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Elabore un algortimo que calcule y muestre la suma de todos los
-multiplos de 5 comprendidos entre dos valores A y B (ambos inclusive).
+múltiplos de 5 comprendidos entre dos valores A y B (ambos inclusive).
 El programa no permitira introducir valores negativos para A y B
 y verificara que A es menor que B/ Si A es mayor que B, intercambiara
 sus valores.
@@ -22,7 +22,7 @@ if B < A:
 
 summation = 0
 
-print("Los numeros son:")
+print("Los números son:")
 
 for n in range(A, B + 1):
 	if n % 5 == 0:
@@ -32,4 +32,4 @@ for n in range(A, B + 1):
 		print(n)
 	n += 1
 
-print(f"La suma de todos los multiplos de 5 entre {A} y {B} es {summation}.")
+print(f"La suma de todos los múltiplos de 5 entre {A} y {B} es {summation}.")
