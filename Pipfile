@@ -13,7 +13,7 @@ Django = ">=2.2.3"
 money = "*"
 docutils = "*"
 doc8 = "*"
-chalk = "*"
+pygubu = "*"
 
 [requires]
 python_version = "3.7"
