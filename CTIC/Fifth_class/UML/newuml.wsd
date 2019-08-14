@@ -1,0 +1,23 @@
+@startuml
+!define DARKBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/9f6874c076bc22599c16701475d60f9fd9e36b4d/style.puml
+
+class MyClass{
+	-int count
+	#int number
+	+String name
+	methodOne()
+	methodTwo()
+}
+
+class SecondClass{
+	int aSecretField
+	void secretMethod()
+}
+
+note left : this class is \na secretClass
+
+MyClass <|-- SecondClass
+MyClass <-left- ThirdClass
+
+@enduml
