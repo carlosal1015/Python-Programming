@@ -11,6 +11,5 @@ Dolor sed viverra ipsum nunc aliquet bibendum enim"""
 
 list_phrase = phrase.split()
 list_phrase.reverse()
-print(' '.join(list_phrase))
-
+print(f"En orden contrario: {' '.join(list_phrase)}.")
 #'hello world'[::-1]
