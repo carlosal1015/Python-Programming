@@ -7,7 +7,7 @@ Dolor sed viverra ipsum nunc aliquet bibendum enim"""
 list_phrase = phrase.split()
 
 for i in range(len(list_phrase)):
-    if len(list_phrase[i]) % 2 == 1:
-        list_phrase[i].remove(len(list_phrase[i])+1/2)
+	if len(list_phrase[i]) % 2 == 1:
+		list_phrase[i] = list_phrase[i][:len(list_phrase[i])//2] + list_phrase[i][len(list_phrase[i])//2+1:]
 
 print(' '.join(list_phrase))
