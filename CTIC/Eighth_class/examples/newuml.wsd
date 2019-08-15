@@ -1,0 +1,20 @@
+@startuml
+
+class Windows{
+	+Tk Ventana
+	+frame Superior
+	+frame Inferior
+	+Label Message
+	+Entry Entrada
+	+Button Conversor
+	+Button Salir
+	Convertir()
+	Salir()
+}
+
+note left : this class is \na Windows
+
+Windows <|-- SecondClass
+Windows <-left- ThirdClass
+
+@enduml
