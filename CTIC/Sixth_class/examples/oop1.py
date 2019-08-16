@@ -12,4 +12,4 @@ celular.vender(2)
 
 print(mota.status())
 print(celular.status())
-# Un metodo esta asociado a un objeto. Una funcipn no esta asociado a un objeto
+# Un método esta asociado a un objeto. Una función no esta asociado a un objeto

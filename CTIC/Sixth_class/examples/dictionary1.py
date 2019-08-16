@@ -18,6 +18,5 @@ def main():
     for key, value in my_dic.items():
         print(f"{key} \t {value}")
 
-
 if __name__ == "__main__":
     main()
