@@ -1,12 +1,12 @@
-from chalk import Chalk as ck
+#from chalk import Chalk as ck
 
-white = ck('white', bold=True, underline=True)
+#white = ck('white', bold=True, underline=True)
 
 def my_decorator(function):
     def welcome():
-        print("La creación de la base de datos gerencias.", end="\n")
+        print("La creación de la base de datos gerencias.", end = "\n")
         function()
-        print("Base de datos de la gerencia.", end="\n")
+        print("Base de datos de la gerencia.", end = "\n")
     return welcome
 
 @my_decorator
@@ -18,8 +18,8 @@ def main():
     }
 
     empleados_dictionary[1003] = dict(nombre = "Milagros", fecha_ingreso = '11-11-15', department = 104)
-    #empleados[1003] = {}
-    del empleados_dictionary[1003]
+
+    del empleados_dictionary[1003]#empleados[1003] = {}
 
     for key, value in empleados_dictionary.items():
         print(f"Persona ID: {key}", end = "\n")
