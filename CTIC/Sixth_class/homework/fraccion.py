@@ -1,47 +1,56 @@
 from math import gcd
 
 class Fraccion(object):
-    def __init__(self, numerator, denominator):
-        self.numerator = numerator
-        self.denominator = denominator
-
-    
-    def sumar(self, other):
-        summation_numerator = self.numerator*other.denominator + self.denominator*other.numerator
-        summation_denominator = self.denominator*other.denominator
-        common_divisor = gcd(abs(summation_numerator), abs(summation_denominator))
-        summation_numerator //= common_divisor
-        summation_denominator //= common_divisor
-
-        return Fraccion(summation_numerator, summation_denominator)
-
-    def multiplicar(self, other):
-        product_numerator = self.numerator*other.numerator
-        product_denominator = self.denominator*other.denominator
-        common_divisor = gcd(abs(product_numerator), abs(product_denominator))
-        product_numerator //= common_divisor
-        product_denominator //= common_divisor
-
-        return Fraccion(product_numerator, product_denominator)
+	"""Resumen de la clase Fraccion:
+	>>> my_fraction = Fraccion(1, 2)
+	"""
+	def __init__(self, numerator, denominator):
+		self._num = numerator
+		self._den = denominator
 
 
-    def __pos__(self, other):
-        pass
-
-    
-    def __mul__(self, other):
-        pass
-
-    
-    def __eq__(self, other):
-        firstNumber = self.numerator*other.denominator
-        secondNumber = self.denominator*other.numerator
-
-        return firstNumber == secondNumber
-
-    def __lt__(self, other):
-        pass
+	def __add__(self, other):
+		assert type(other) == Fraccion
+		summation_num = self._num*other._den + self._den*other._num
+		summation_den = self._den*other._den
+		common_divisor = gcd(abs(summation_num), abs(summation_den))
+		summation_num //= common_divisor
+		summation_den //= common_divisor
+		return Fraccion(summation_num, summation_den)
 
 
-    def __str__(self):
-        return f"$\\frac{{{self.numerator}}}{{{self.denominator}}}$"
+	def __mul__(self, other):
+		assert type(other) == Fraccion
+		product_num = self._num*other._num
+		product_den = self._den*other._den
+		common_divisor = gcd(abs(product_num), abs(product_den))
+		product_num //= common_divisor
+		product_den //= common_divisor
+		return Fraccion(product_num, product_den)
+
+
+	def __eq__(self, other):
+		if type(q) != Fraccion:
+			return False
+		firstNumber = self._num*other._den
+		secondNumber = self._den*other._num
+		return firstNumber == secondNumber
+
+
+	def __lt__(self, other):
+		firstNumber = self._num*other._den
+		secondNumber = self._den*other._num
+		return firstNumber < secondNumber
+
+
+	def sumar(self, other):
+		return Fraccion(self._num, self._den).__add__(Fraccion(other._num, other._den))
+
+	def multiplicar(self, other):
+		return Fraccion(self._num, self._den).__mul__(Fraccion(other._num, other._den))
+
+	def __str__(self):
+		if self._num*self._den >= 0:
+			return f"$\\frac{{{abs(self._num)}}}{{{abs(self._den)}}}$"
+		else:
+			return f"$-\\frac{{{abs(self._num)}}}{{{abs(self._den)}}}$"
